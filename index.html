@@ -33,31 +33,7 @@
       font-weight: 300;
       line-height: 1.7;
       overflow-x: hidden;
-      cursor: none;
     }
-
-    /* Custom cursor */
-    #cursor {
-      width: 10px; height: 10px;
-      background: var(--accent);
-      border-radius: 50%;
-      position: fixed; top: 0; left: 0;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.15s ease;
-      mix-blend-mode: screen;
-    }
-    #cursor-ring {
-      width: 36px; height: 36px;
-      border: 1.5px solid rgba(0,229,255,0.4);
-      border-radius: 50%;
-      position: fixed; top: 0; left: 0;
-      pointer-events: none;
-      z-index: 9998;
-      transition: transform 0.35s ease, width 0.3s, height 0.3s, border-color 0.3s;
-    }
-    body:hover #cursor-ring { border-color: rgba(0,229,255,0.6); }
-
     /* Noise texture overlay */
     body::before {
       content: '';
